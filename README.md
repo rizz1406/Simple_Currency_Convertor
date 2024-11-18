@@ -14,5 +14,5 @@ A simple currency converter built using Python and Streamlit. The application fe
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/currency-converter.git
+git clone https://github.com/rizz1406/Simple_Currency_Convertor.git
 cd currency-converter
