@@ -1,9 +1,12 @@
 import streamlit as st
 import requests
+import os
 
-# Function to get real-time conversion rates using your API
+# Get API key from environment variable
+api_key = os.getenv('EXCHANGE_API_KEY')
+
+# Function to get real-time conversion rates using the API key
 def get_conversion_rate(from_currency, to_currency):
-    api_key = "7c3c62ea7941351ef1785d22"  # Your API key
     url = f"https://v6.exchangerate-api.com/v6/{api_key}/latest/{from_currency}"
     
     response = requests.get(url)
@@ -16,7 +19,7 @@ def get_conversion_rate(from_currency, to_currency):
         return None
 
 # Streamlit UI
-st.title("Currency Converter Using Streamlit ")
+st.title("Currency Converter")
 
 # Currency inputs
 from_currency = st.selectbox("From Currency", ["USD", "EUR", "INR", "GBP", "AUD", "CAD", "JPY", "CNY"])
