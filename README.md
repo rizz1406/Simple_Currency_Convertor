@@ -8,9 +8,6 @@ A simple currency converter built using Python and Streamlit. The application fe
 - Simple and intuitive UI with Streamlit.
 - Convert between popular currencies like USD, EUR, INR, GBP, AUD, CAD, JPY, and CNY.
 
-## Demo
-
-![Currency Converter UI](currency_converter_demo.png) *(Optional: Add a screenshot of your app here)*
 
 ## Installation
 
